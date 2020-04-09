@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">title: {{this.article.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">author:{{this.article.author}}</h6>
+        <p class="card-text">{{this.article.body}}</p>
+        <a href="/articles/{{this.article.id}}/edit"><button class="btn btn-success">Edit</button></a>
+        <a href="/articles/{{this.article.id}}/delete" onclick="return confirm('Are you sure to delete this record?')"><button class="btn btn-danger">Delete</button></a>
+    </div>
+
+</div>
